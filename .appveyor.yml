@@ -5,4 +5,4 @@ install:
 build: off
 
 test_script:
-  - python.exe -m tox -c .appveyor-tox-debug.ini -vv -e run-cmd -- python.exe -c "import qutip; print(qutip.__version__)"
+  - python.exe -m tox -c tox.ini -vv -e run-cmd -- python.exe -c "import numpy; print(numpy.__version__)"
