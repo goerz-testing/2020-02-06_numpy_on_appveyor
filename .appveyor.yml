@@ -1,8 +1,9 @@
 install:
+  - "C:\\Python38\\python.exe -m pip install tox"
+  - "C:\\Python38\\python.exe -m pip install cython"
   - C:\Miniconda3-x64\\Scripts\\activate"
-  - conda.exe install -c conda-forge -y tox
 
 build: off
 
 test_script:
-  - python.exe -m tox -c tox.ini -vv -e run-cmd -- python.exe -c "import numpy; print(numpy.__version__)"
+  - C:\\Python38\\python.exe -m tox -c tox.ini -vv -e run-cmd -- python.exe -c "import numpy; print(numpy.__version__)"
