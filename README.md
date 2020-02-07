@@ -66,3 +66,9 @@ The repository reproduces with error on [AppVeyor](https://ci.appveyor.com/proje
 * `systemtox` branch: [Python 3.8, numpy from conda-forge channel, use system-tox instead of installing tox into conda](https://github.com/goerz-testing/2020-02-06_numpy_on_appveyor/commit/b30e21f25b594c126beb338f74fe026d82ee8f45) ❌ ([AppVeyor log](https://ci.appveyor.com/project/goerz/2020-02-06-numpy-on-appveyor/builds/30634194)) → Problem isn't with the tox installed via `conda install tox`)
 * `36` branch: [Python 3.6, numpy from conda-forge channe](https://github.com/goerz-testing/2020-02-06_numpy_on_appveyor/commit/916e9b780672152a40fbdb33e26a7b37a1b49278) ✅ ([AppVeyor log](https://ci.appveyor.com/project/goerz/2020-02-06-numpy-on-appveyor/builds/30654430))
 * `notox` branch: [Python 3.8, numpy from conda-forge channel, install into system-conda(no tox)](https://github.com/goerz-testing/2020-02-06_numpy_on_appveyor/commit/0e42fe12724321b1da4379a1d9244ff006ca2075) ✅ ([AppVeyor log](https://ci.appveyor.com/project/goerz/2020-02-06-numpy-on-appveyor/builds/30633961))
+
+## Issues:
+
+* https://github.com/numpy/numpy/issues/15537
+* https://github.com/conda-forge/numpy-feedstock/issues/184
+* https://github.com/tox-dev/tox-conda/issues/37
