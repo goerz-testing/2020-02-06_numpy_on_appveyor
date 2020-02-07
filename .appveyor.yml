@@ -1,8 +1,8 @@
 install:
   - C:\Miniconda3-x64\\Scripts\\activate"
-  - conda.exe install -c conda-forge -y tox
+  - conda.exe install -y numpy
 
 build: off
 
 test_script:
-  - python.exe -m tox -c tox.ini -vv -e run-cmd -- python.exe -c "import numpy; print(numpy.__version__)"
+  - python.exe -c "import numpy; print(numpy.__version__)"
