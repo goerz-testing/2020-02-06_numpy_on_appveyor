@@ -1,10 +1,11 @@
 install:
   - C:\\Miniconda3-x64\\Scripts\\activate
   - conda.exe update -n base -c defaults -y conda
-  - conda.exe create -n testenv -y python=3.8
+  - conda.exe create -n testenv -y python=3.6
   - conda.exe install -n testenv -y numpy
 
 build: off
 
 test_script:
+  - C:\\Miniconda3-x64\\envs\\testenv\\python.exe --version
   - C:\\Miniconda3-x64\\envs\\testenv\\python.exe -c "import numpy; print(numpy.__version__)"
