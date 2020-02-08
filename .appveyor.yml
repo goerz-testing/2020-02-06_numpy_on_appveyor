@@ -1,3 +1,7 @@
+environment:
+  matrix:
+      - PATH: C:\\Miniconda3-x64\\Scripts;%PATH%
+
 install:
   - C:\\Miniconda3-x64\\Scripts\\activate
   - conda.exe update -n base -c defaults -y conda
@@ -7,4 +11,6 @@ install:
 build: off
 
 test_script:
+  - activate testenv
+  - python.exe --version
   - C:\\Miniconda3-x64\\envs\\testenv\\python.exe -c "import numpy; print(numpy.__version__)"
